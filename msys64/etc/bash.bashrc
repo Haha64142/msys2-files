@@ -66,6 +66,8 @@ unset _ps1_symbol
 eval "$(dircolors -b /etc/DIR_COLORS)"
 
 # Aliases
-if [ -f "etc/.bash_aliases" ]; then
-  source "etc/.bash_aliases"
+#
+# Some people use a different file for aliases
+if [ -f "/etc/.bash_aliases" ]; then
+  source "/etc/.bash_aliases"
 fi

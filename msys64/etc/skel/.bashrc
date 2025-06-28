@@ -69,13 +69,6 @@
 # Whenever displaying the prompt, write the previous line to disk
 # export PROMPT_COMMAND="history -a"
 
-# Aliases
-#
-# Some people use a different file for aliases
-if [ -f "/etc/.bash_aliases" ]; then
-  source "/etc/.bash_aliases"
-fi
-
 # Some example alias instructions
 # If these are enabled they will be used instead of any instructions
 # they may mask.  For example, alias rm='rm -i' will mask the rm

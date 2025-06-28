@@ -69,13 +69,6 @@ export HISTCONTROL=$HISTCONTROL${HISTCONTROL+:}ignoredups
 # Whenever displaying the prompt, write the previous line to disk
 # export PROMPT_COMMAND="history -a"
 
-# Aliases
-#
-# Some people use a different file for aliases
-if [ -f "/etc/.bash_aliases" ]; then
-  source "/etc/.bash_aliases"
-fi
-
 # Some example alias instructions
 # If these are enabled they will be used instead of any instructions
 # they may mask.  For example, alias rm='rm -i' will mask the rm
@@ -211,3 +204,5 @@ if [[ -f "$HOME/git-prompt.sh" ]]; then
 else
   PS1="${ESC}0;$MSYSTEM:$PWD\007\]\n${GREEN}\u@\h ${MAGENTA}$MSYSTEM ${YELLOW}\w${RESET}\n$ "
 fi
+
+export PATH="$HOME/git-wrapper:$PATH"
