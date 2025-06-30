@@ -9,7 +9,7 @@
 	sslBackend = openssl
 	sslCAInfo = C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
 [core]
-	autocrlf = true
+	autocrlf = false
 	fscache = true
 	symlinks = false
 	editor = nano.exe
